@@ -3,6 +3,8 @@ import streamlit as st
 import torch
 import string
 from transformers import BertTokenizer, BertForMaskedLM
+from transformers import logging
+logging.set_verbosity_error()
 
 st.set_page_config(page_title='Next Word Prediction Model', page_icon=None, layout='centered', initial_sidebar_state='auto')
 
